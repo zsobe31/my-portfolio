@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My-Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- FAVICON HOZZÁADÁSA -->
+		<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+
+		<!-- BOOTSTRAP 4 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- ICON-FAMILY CSOMAGOK -->
+		<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+		<script src="progressbar.js"></script>
+
+		<style type="text/css">
+
+			body, html {
+			    height: 100%;
+			    margin: 0;
+			}
+			.container-fluid {
+				padding: 50px 0 80px 0;
+			}
+
+			.bg {
+			    /* The image used */
+			    background-image: url("images/web-design-1.png");
+
+			    /* Full height */
+			    height: 100%; 
+
+			    /* Center and scale the image nicely */
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			    background-attachment: fixed;
+			}
+			.vertical-menu {
+			    width: 200px;
+			    height: 100%;
+			    background: rgba(0,0,0,0.5);
+			}
+
+			.vertical-menu a {
+			    background-color: ;
+			    color: white;
+			    display: block;
+			    padding: 12px;
+			    text-decoration: none;
+			}
+
+			.vertical-menu a:hover {
+			    background-color: rgba(254,125,25,0.5);
+			}
+
+			.vertical-menu a.active {
+			    background-color: rgba(254,111,1,1);
+			    color: white;
+			}
+			.kep {
+				border-radius: 50%;
+			}
+			.also {
+				position: absolute;
+				bottom: 2%;
+			}
+			#bemutat {
+				background: url('images/Mantle.jpg');
+			}
+			#bemutat img {
+				margin-top: 2%;
+				margin-left: 50%;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			#bemutat p {
+				margin: 50px 0 0 200px;
+				padding-bottom: 50px;
+				text-align: justify;
+			}
+			.box {
+				text-align: center;
+				position: absolute;
+				top: 50%;
+			  	left: 60%;
+			  	-webkit-transform: translate(-50%, -50%);
+			  	transform: translate(-50%, -50%);
+			  	background: rgba(0,0,0,0.5);
+			  	border-radius: 10px;
+			}
+			.box .h4 {
+				padding: 20px 0;
+				line-height: 4rem;
+				color: #fff;
+				font-size: 4rem;
+				font-family: 'Italianno', cursive;
+			}
+			#tapasztalat {
+				background: url('images/tapasztalat-hatter.jpg');
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			    background-attachment: fixed;
+			}
+			.progressbar__label{
+    			color: rgb(254,111,1) !important;
+			}
+			#kapcsolat {
+				background: url('images/tapasztalat-hatter.jpg');
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			    background-attachment: fixed;
+				padding-bottom: 50px;
+				text-align: center;
+			}
+			.kuldes a {
+				color: #fff;
+				text-decoration: none;
+				text-align: center;
+				background: rgba(254,111,1,1);
+				width: 200px;
+				padding: 10px 30px;
+				border-radius: 5px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			}
+			.kuldes a:hover {
+				-webkit-transform: scale(1.05);
+				-webkit-transition: all 1s ease;
+				transform: scale(1.05);
+				transition: all 1s ease;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.row {
+				padding-left: 200px;
+				width: 100%;
+			}
+			h3 {
+				padding: 20px 0 20px 200px;
+			}
+			@media only screen and (max-device-width: 1366px){
+				.fixed-top {
+					display: none;
+				}
+				.row, h3 {
+					padding-left: 0;
+				}
+				#bemutat img {
+					margin-left: 44%;
+				}
+				#bemutat p {
+					margin: 20px 0;
+				}
+				.box {
+					left: 50%;
+				}
+				.box .h4 {
+					line-height: 2rem;
+					font-size: 1.5rem;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="bg containre-fluid">
+
+			<div class="container box" style="width: 35%">
+
+				<h4 class="h4">Web-Fejlesztő</h4>
+				<h4 class="h4">Bemutatkozó oldal!</h4>
+
+			</div>
+
+			<div class="vertical-menu fixed-top">
+
+				<a class="navbar-brand" href="#main">
+					<img src="images/web-development.png" alt="Logo" style=" width: auto; height:100px">
+				</a>
+
+			  	<a href="#" class="active">Home</a>
+			  	<a href="#bemutat">Bemutatkozás</a>
+			  	<a href="#tapasztalat">Tapasztalat</a>
+			  	<a href="#munkak">Munkáim</a>
+			  	<a href="#kapcsolat">Kapcsolat</a>
+
+			  	<div class="d-flex p-3 also">
+				  	<div><a class="nav-link" href="https://facebook.com"><ion-icon name="logo-facebook" size="large"></ion-icon></a></div>
+				  	<div><a class="nav-link" href="https://linkedin.com"><ion-icon name="logo-linkedin" size="large"></ion-icon></a></div>
+				  	<div><a class="nav-link" href="https://instagram.com"><ion-icon name="logo-instagram" size="large"></ion-icon></a></div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="bemutat" class="containre-fluid">
+			<h3 class="text-center" style="">Bemutatkozás</h3>
+			<img src="images/zsolt2.jpg" class="kep img-fluid">
+			<div class="container">
+				<p style="font-size: 1rem">Tanuló programozó vagyok. Mindig is érdekelt a számítástechnika világa, de csak fél éve kezdtem el kifejezetten foglalkozni a webes programozással. Online okattóvideókból tanultam, majd június elején a HelixLab okattási központ pécsi iskolájában tanári-mentori segítséggel vetettem magam a tanulás mélységeibe! Szeretném minnél jobban megtanulni ezt a szakmát, szeretnék jó programozó lenni, de addig még sok tanulnivalóm van!</p>
+			</div>
+		</div>
+
+		<div id="tapasztalat" class="containre-fluid" style="padding-top: 25px; padding-bottom: 50px;">
+			<h3 class="text-center" style="">Szakmai tapasztalat</h3>
+
+			<div class="row">
+				<div class="col-8 col-lg-2 mx-auto">HTML5
+					<div id="example-animation-container-1"></div>
+				</div>
+				<div class="col-8 col-lg-2 mx-auto">CSS3
+					<div id="example-animation-container-2"></div>
+				</div>
+				<div class="col-8 col-lg-2 mx-auto">Bootstrap4
+					<div id="example-animation-container-3"></div>
+				</div>
+				<div class="col-8 col-lg-2 mx-auto">JavaScript
+					<div id="example-animation-container-4"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="munkak" class="containre-fluid bg-info">
+
+			<h3 class="text-center" style="">Projektek</h3>
+			<div class="row">
+				<div class="col-10 col-lg-4 mx-auto">
+					<img src="images/front-end-development.png" class="img-fluid">
+				</div>
+				<div class="col-10 col-lg-4 mx-auto">
+					<img src="images/front-end-development.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+
+		<div id="kapcsolat" class="containre-fluid">
+			<h3 class="text-center" style="">Kapcsolat</h3>
+			<div class="row">
+				<div class="col-10 col-lg-3 mx-auto">
+					<p class="cim2">Email:</p>
+					<p>zsobe31@gmail.com</p>
+					<div class="kuldes">
+						<a class="btn mx-auto" href="mailto:zsobe31@gmail.com">Üzenet küldés!</a>
+					</div>
+				</div>
+				<div class="col-10 col-lg-3 mx-auto">
+					<p class="cim2">Telefonszámom:</p>
+					<p>+36-70/332-8437</p>
+					<div class="kuldes">
+						<a class="btn mx-auto" href="tel: +36 70 332 8437">Hívás!</a>
+					</div>
+				</div>
+				<div class="col-10 col-lg-3 mx-auto">
+					<p class="cim2">Címem:</p>
+					<p>Szentlőrinc, Zrínyi u. 2.</p>
+					<div class="kuldes">
+						<a class="btn mx-auto" href="https://www.google.com/maps/place/Szentl%C5%91rinc,+Zr%C3%ADnyi+u.+2,+7940/@46.0374436,17.9845783,17z/data=!3m1!4b1!4m5!3m4!1s0x4742ab1fbcd35ea1:0xef3ea07032cf6f5e!8m2!3d46.0374399!4d17.986767">Útvonaltervezés!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="containre-fluid bg-secondary" style="height: 10%; padding-top: 2%">
+			<p class="text-center" style="padding-left: 200px">Copyright © 2018 by Zsolt</p>			
+		</div>
+
+		<!-- SCRIPT -->
+		<script src="script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
